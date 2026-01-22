@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Weather App</h1>
+
+  <input type="text" id="city" placeholder="Enter city name">
+  <br><br>
+ <button id="weatherBtn" onclick="getWeather()">Get Weather</button>
+ <br><br>
+<button id="unitBtn" onclick="toggleUnit()">Show °F</button>
+
+
+<p id="loading" style="display:none; color:blue;">
+  Loading weather data...
+</p>
+
+  <p id="errorMessage" style="color:red;"></p>
+
+
+  <div id="result">
+    <p id="cityName"></p>
+    <img id="weatherIcon" alt="Weather Icon" />
+    <p id="temperature"></p>
+    <p id="humidity"></p>
+    <p id="wind"></p>
+    <p id="description"></p>
+  </div>
+  <h3>Recent Searches</h3>
+<ul id="recentList"></ul>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

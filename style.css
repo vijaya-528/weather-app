@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #1565c0;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #1565c0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+button:disabled {
+    background-color: #9ca3af;
+    color: #ffffff;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#loading {
+    display: none;
+    color: blue;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Dim the page during loading */
+body.loading #result,
+body.loading #recentList,
+body.loading input,
+body.loading button {
+    opacity: 0.5;
+    pointer-events: none; /* prevent clicks during loading */
+}
+
+/* Recent searches styling */
+#recentList {
+    list-style: none;
+    padding: 0;
+    max-width: 200px;
+    margin: 10px auto 0 auto;
+}
+
+#recentList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#recentList li:hover {
+    background-color: #cfe8fc;
+    border-radius: 3px;
+}
+
